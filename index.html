@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Uber Eats Rewards</title>
+<title>Wingstop Rewards</title>
 
 <style>
 * { box-sizing: border-box; }
@@ -21,32 +21,36 @@ body {
   padding: 20px 16px 110px;
 }
 
-/* IMAGE */
+/* LOGO */
 .logo {
-  width: 110px;
-  margin: 15px auto 10px;
+  width: 150px;
+  margin: 18px auto 10px;
   display: block;
 }
 
+/* TITLE */
 h1 {
   text-align: center;
   font-size: 26px;
   font-weight: 800;
   margin: 20px 0 25px;
+  color: #0a7d34; /* Wingstop green */
 }
 
+/* STEPS */
 .step {
-  border: 1px solid #e1e1e1;
+  border: 1px solid #e5e5e5;
   border-radius: 14px;
   padding: 14px 16px;
   margin-bottom: 14px;
   font-size: 16px;
   font-weight: 600;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .step span {
   font-weight: 800;
+  color: #0a7d34;
 }
 
 /* FAQ */
@@ -56,12 +60,12 @@ h1 {
 
 .faq h2 {
   font-size: 18px;
-  margin-bottom: 10px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .faq-item {
-  border: 1px solid #e1e1e1;
+  border: 1px solid #e5e5e5;
   border-radius: 12px;
   padding: 12px 14px;
   margin-bottom: 10px;
@@ -73,7 +77,7 @@ h1 {
   margin-bottom: 4px;
 }
 
-/* MOBILE CTA */
+/* CTA BAR */
 .cta-bar {
   position: fixed;
   bottom: 0;
@@ -87,13 +91,17 @@ h1 {
 .cta {
   width: 100%;
   height: 56px;
-  background: #06C167;
+  background: #0a7d34;
   color: #fff;
   border: none;
   border-radius: 14px;
   font-size: 20px;
   font-weight: 800;
   cursor: pointer;
+}
+
+.cta:active {
+  transform: scale(0.98);
 }
 
 .note {
@@ -123,37 +131,38 @@ h1 {
 <body>
 
 <div class="wrapper">
-  <img src="https://i.ibb.co/tp577C3L/pngwing-com-5.png" class="logo" alt="Uber Eats">
 
-  <h1>Get Your Uber Eats Reward</h1>
+  <img src="https://i.ibb.co/DP67XMrK/WING.png" class="logo" alt="Wingstop">
 
-  <div class="step"><span>1.</span> Click “Get Started” below 👇</div>
+  <h1>Get $500 Toward Wingstop</h1>
+
+  <div class="step"><span>1.</span> Tap “Get Started” below 👇</div>
   <div class="step"><span>2.</span> Answer a few quick questions 📝</div>
-  <div class="step"><span>3.</span> Enter your email and details</div>
-  <div class="step"><span>4.</span> Complete 4–5 deals 💰</div>
-  <div class="step"><span>5.</span> Receive your Uber Eats reward 🍔</div>
+  <div class="step"><span>3.</span> Enter your email + details</div>
+  <div class="step"><span>4.</span> Complete 4–5 sponsor deals 💰</div>
+  <div class="step"><span>5.</span> Receive your $500 Wingstop reward 🍗</div>
 
   <div class="faq">
     <h2>Quick Questions</h2>
 
     <div class="faq-item">
-      <strong>Why do I need to complete the deals?</strong>
-      The deals help sponsor the promotion and unlock your reward eligibility.
+      <strong>Why complete the deals?</strong>
+      Sponsors cover the cost of the reward, which unlocks your eligibility.
     </div>
 
     <div class="faq-item">
       <strong>How long does it take?</strong>
-      Most people finish in about 30–45 minutes.
+      Most users finish within 30–40 minutes.
     </div>
 
     <div class="faq-item">
-      <strong>Do I need to pay?</strong>
-      Some deals may require a small trial or signup
+      <strong>Do I have to pay?</strong>
+      Many offers are free. Some may include trials — just complete 4–5 to qualify.
     </div>
 
     <div class="faq-item">
-      <strong>When do I get my reward?</strong>
-      After completing the required deals, your reward is processed and sent.
+      <strong>When do I receive my reward?</strong>
+      After verification, your reward is processed and delivered with instructions.
     </div>
   </div>
 
@@ -161,12 +170,13 @@ h1 {
     <button class="cta" onclick="go()">Get Started</button>
     <div class="note">Limited availability • While spots last</div>
   </div>
+
 </div>
 
 <script>
 function go() {
   setTimeout(function () {
-    window.location.href = "https://trkfy.org/aff_c?offer_id=1999&aff_id=5400";
+    window.location.href = "https://trkfy.org/aff_c?offer_id=1541&aff_id=5400";
   }, 300);
 }
 </script>
