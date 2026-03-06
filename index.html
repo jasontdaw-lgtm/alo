@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wingstop Rewards</title>
+<title>DoorDash Rewards</title>
 
 <style>
 * { box-sizing: border-box; }
@@ -21,63 +21,81 @@ body {
   padding: 20px 16px 110px;
 }
 
-/* LOGO */
+/* IMAGE */
 .logo {
-  width: 150px;
-  margin: 18px auto 10px;
+  width: 100px;
+  margin: 15px auto 10px;
   display: block;
 }
 
-/* TITLE */
 h1 {
   text-align: center;
   font-size: 26px;
   font-weight: 800;
   margin: 20px 0 25px;
-  color: #0a7d34; /* Wingstop green */
 }
 
-/* STEPS */
 .step {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #e1e1e1;
   border-radius: 14px;
   padding: 14px 16px;
   margin-bottom: 14px;
   font-size: 16px;
   font-weight: 600;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
 .step span {
   font-weight: 800;
-  color: #0a7d34;
+}
+
+/* TRUST BOX */
+.trust {
+  margin: 22px 0;
+  padding: 14px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  font-size: 14px;
 }
 
 /* FAQ */
 .faq {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .faq h2 {
-  font-size: 18px;
   text-align: center;
-  margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 16px;
 }
 
 .faq-item {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #e1e1e1;
   border-radius: 12px;
-  padding: 12px 14px;
   margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 14px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #fafafa;
+}
+
+.faq-answer {
+  padding: 14px 16px;
   font-size: 14px;
+  color: #555;
+  display: none;
+  background: #fff;
 }
 
-.faq-item strong {
+.faq-item.active .faq-answer {
   display: block;
-  margin-bottom: 4px;
 }
 
-/* CTA BAR */
+/* MOBILE CTA */
 .cta-bar {
   position: fixed;
   bottom: 0;
@@ -91,17 +109,13 @@ h1 {
 .cta {
   width: 100%;
   height: 56px;
-  background: #0a7d34;
+  background: #eb1700;
   color: #fff;
   border: none;
   border-radius: 14px;
   font-size: 20px;
   font-weight: 800;
   cursor: pointer;
-}
-
-.cta:active {
-  transform: scale(0.98);
 }
 
 .note {
@@ -131,54 +145,73 @@ h1 {
 <body>
 
 <div class="wrapper">
+  <img src="https://i.ibb.co/jvGdfxFY/DASH-BIG.png" class="logo" alt="DoorDash">
 
-  <img src="https://i.ibb.co/DP67XMrK/WING.png" class="logo" alt="Wingstop">
+  <h1>Five Simple Steps…</h1>
 
-  <h1>Get $500 Toward Wingstop</h1>
-
-  <div class="step"><span>1.</span> Tap “Get Started” below 👇</div>
+  <div class="step"><span>1.</span> Click “Get Started” below 👇</div>
   <div class="step"><span>2.</span> Answer a few quick questions 📝</div>
-  <div class="step"><span>3.</span> Enter your email + details</div>
-  <div class="step"><span>4.</span> Complete 4–5 sponsor deals 💰</div>
-  <div class="step"><span>5.</span> Receive your $500 Wingstop reward 🍗</div>
+  <div class="step"><span>3.</span> Enter your email and details</div>
+  <div class="step"><span>4.</span> Complete 3–5 deals 💰</div>
+  <div class="step"><span>5.</span> Receive $720 towards DoorDash 🍔</div>
+
+  <div class="trust">
+    ✅ Secure & verified offers<br>
+    ⏱ Takes only 10–20 minutes<br>
+    👥 Thousands of users complete this daily
+  </div>
 
   <div class="faq">
-    <h2>Quick Questions</h2>
+    <h2>Frequently Asked Questions</h2>
 
     <div class="faq-item">
-      <strong>Why complete the deals?</strong>
-      Sponsors cover the cost of the reward, which unlocks your eligibility.
+      <div class="faq-question">Is this really DoorDash?</div>
+      <div class="faq-answer">
+        This promotion is run by our marketing partners and is not directly operated by DoorDash.
+      </div>
     </div>
 
     <div class="faq-item">
-      <strong>How long does it take?</strong>
-      Most users finish within 30–40 minutes.
+      <div class="faq-question">Do I need to pay anything?</div>
+      <div class="faq-answer">
+        Some deals may require small purchases or sign-ups. These help unlock the reward.
+      </div>
     </div>
 
     <div class="faq-item">
-      <strong>Do I have to pay?</strong>
-      Many offers are free. Some may include trials — just complete 4–5 to qualify.
+      <div class="faq-question">How long does it take?</div>
+      <div class="faq-answer">
+        Most users complete the steps within 10–20 minutes.
+      </div>
     </div>
 
     <div class="faq-item">
-      <strong>When do I receive my reward?</strong>
-      After verification, your reward is processed and delivered with instructions.
+      <div class="faq-question">How do I receive the reward?</div>
+      <div class="faq-answer">
+        After completing the required steps, you will be redirected to claim your reward.
+      </div>
     </div>
   </div>
 
   <div class="cta-bar">
     <button class="cta" onclick="go()">Get Started</button>
-    <div class="note">Limited availability • While spots last</div>
+    <div class="note">Limited availability • While supplies last</div>
   </div>
-
 </div>
 
 <script>
 function go() {
   setTimeout(function () {
-    window.location.href = "https://trkfy.org/aff_c?offer_id=1541&aff_id=5400";
-  }, 300);
+    window.location.href = "https://gloffers.org/aff_c?offer_id=1382&aff_id=5400";
+  }, 600);
 }
+
+// FAQ toggle
+document.querySelectorAll('.faq-question').forEach(item => {
+  item.addEventListener('click', () => {
+    item.parentElement.classList.toggle('active');
+  });
+});
 </script>
 
 </body>
